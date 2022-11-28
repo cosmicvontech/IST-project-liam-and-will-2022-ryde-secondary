@@ -2,15 +2,16 @@
     <link href="styles.css" rel="stylesheet" />
     <head>
         <nav class="centeredhead">
+            <img src="logo.png" alt="logo" height="100px" width="145px"/>
             <ul>
                 <li>
-                    <button class="navbarbutton">home</button>
+                    <button class="navbarbutton">Home</button>
                 </li>
                 <li>
-                    <button class="navbarbutton">TBD</button>
+                    <button class="navbarbutton" onclick="openpage('library.html')">library</button>
                 </li>
                 <li>
-                    <button class="navbarbutton">TBD</button>
+                    <button class="navbarbutton" onclick="openpage('physicalproducts.html')">Buy movies</button>
                 </li>
                 <li>
                     <button class="navbarbutton">TBD</button>
@@ -21,18 +22,31 @@
             </ul>
         </nav>
     </head>
-    <body>
+    <body onload="setshit('homepagestartshit/loginpage.html')">
         <div class="centeredbody">
-        <iframe width="450px" height="600px" id="shit" class="pageitemsandshit"> <href href="gary - copy.html"> </iframe>
-        <button class="lowernavbarbutton" onclick="setshit('gary.html')">img</button>
-        <button class="lowernavbarbutton" onclick="setshit(gary.html)">img2</button>
-        <script hef="scripts.js">
-            var shit = document.getElementById('shit');
+            <iframe width="450px" height="600px" id="shit" class="pageitemsandshit"> <href href="gary - copy.html"> </iframe>
+            <div class="bottembar">
+                <button class="lowernavbarbutton" onclick="setshit('tvselection.html')">about us</button>
+                <div class="spher"></div>
+                <button class="lowernavbarbutton" onclick="setshit('homepagestartshit/thegoodwedo.html')">what we do</button>
+                <div class="spher"></div>
+                <button class="lowernavbarbutton" onclick="setshit('https://tinyurl.com/5xy2kah5')">our mission</button>
+                <div class="spher"></div>
+                <button class="lowernavbarbutton" onclick="setshit('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20256.60003922746!2d165.95537463955077!3d-50.607143799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9b37960d3cdddd7%3A0xbd1bca4ab10f2187!2sDisappointment%20Island!5e0!3m2!1sen!2sau!4v1669070772144!5m2!1sen!2sau')">ashes location</button>
+            </div>
+               <script hef="scripts.js">
+                var shit = document.getElementById('shit');
 
-            function setshit(href) {
-                shit.innerHTML = '<iframe width="450px" height="600px" id="shit" class="pageitemsandshit" href="' + href + '"></iframe>';
-            };
-        </script>
+                function setshit(href) {
+                    //shit.innerHTML = '<iframe width="450px" height="600px" id="shit" class="pageitemsandshit" href="' + href + '"></iframe>';
+                    shit.src = href
+                    console.log(href)
+                   }; 
+
+                   function openpage(href) {
+                       window.location.href = href
+                   };
+            </script>
         </div>
     </body>
 </html>

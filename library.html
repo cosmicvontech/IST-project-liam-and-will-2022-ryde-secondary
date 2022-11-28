@@ -1,0 +1,83 @@
+<html>
+<link href="styles.css" rel="stylesheet" />
+<head>
+    <nav class="centeredhead">
+        <img src="logo.png" alt="logo" height="100px" width="145px" />
+        <ul>
+            <li>
+                <button class="navbarbutton" onclick="openpage('index.html')">Home</button>
+            </li>
+            <li>
+                <button class="navbarbutton" onclick="openpage('library.html')">library</button>
+            </li>
+            <li>
+                <button class="navbarbutton" onclick="openpage('physicalproducts.html')">Buy movies</button>
+            </li>
+            <li>
+                <button class="navbarbutton">TBD</button>
+            </li>
+            <li>
+                <button class="navbarbutton">TBD</button>
+            </li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div class="centeredbody">
+        <div class="centeredbody">
+            <div class="gridcolumn" id="item-list">
+                <div class="gridrow">
+                    <div>
+                        <div class="centeredbody">
+                            <h2>Search Our Movies</h2>
+                            <input type="text" class="seqarchbartext" id="mySearch" onkeyup="searchstuff()" placeholder="Search.." title="Type in a category">
+                        </div>
+                        <ul class="ulgrid" id="myMenu">
+                            <li><h1 hidden>shrek</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" onclick="setvideo('https://tinyurl.com/3zhewefm')" /> </li>
+                            <li><h1 hidden>beemovie</h1> <img class="libraryselection" src="moviescreenshit/bee.png" onclick="setvideo('https://tinyurl.com/3vadhzva')" /> </li>
+                            <li><h1 hidden>morbius</h1> <img class="libraryselection" src="moviescreenshit/morbius.jpg" onclick="setvideo('https://tinyurl.com/49me64tz')" /> </li>
+                            <li><h1 hidden>minions: rise of gru</h1> <img class="libraryselection" src="moviescreenshit/minions.jpg" onclick="setvideo('https://tinyurl.com/zerj47ba')" /> </li>
+                            <li><h1 hidden>hunt for the wilderpeople</h1> <img class="libraryselection" src="moviescreenshit/wild.jpg" onclick="setvideo('')" /> </li>
+                            <li><h1 hidden>star wars 3</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" onclick="setshit('')" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                            <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="centeredbody">
+                    <iframe hidden width="1200px" height="00px" id="shit" class="pageitemsandshit" src="tvselection.html"></iframe>
+                    <div id="videor" width="1000px" height="800px"></div>
+                    <div class="bottembar">
+                        <button class="lowernavbarbutton" onclick=""><img src="logos/"></img></button>
+                        <div class="spher"></div>
+                        <button class="lowernavbarbutton" onclick="filterProduct('tv')"><img src="logos/tvicon.png" class="icon" width="50px" height="50px"></img></button>
+                        <div class="spher"></div>
+                        <button class="lowernavbarbutton" onclick="skip(10)"><img src="logos/"></img></button>
+                        <div class="spher"></div>
+                        <button class="lowernavbarbutton" onclick=""><img src="logos/"></img></button>
+                    </div>
+                </div>
+                <script type="text/javascript" src="scripts.js">
+            var shit = document.getElementById('shit');
+
+            function setshit(href) {
+                //shit.innerHTML = '<iframe width="450px" height="600px" id="shit" class="pageitemsandshit" href="' + href + '"></iframe>';
+                shit.src = href
+                console.log(href)
+            };
+
+            function opeppage(href) {
+                window.location.href = href
+            };
+
+                </script>
+            </div>
+</body>
+</html>

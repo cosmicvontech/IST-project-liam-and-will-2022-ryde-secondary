@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>TVlibrary</title>
+</head>
+<body>
+    <link href="styles.css" rel="stylesheet" />
+    <div class="centeredbody">
+        <div class="gridcolumn">
+            <div class="gridrow">
+                <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('https://driveplyr.sh20raj.repl.co/plyr.html?id=eyJpZCI6WyIxR3R1Q3lVNXNGcWdhQnBsamcxUEVPY1ZRdW5rSy0tcU4iXX0=')"></img>
+                <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('morb.mkv')"></img>
+                <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                </div>
+                <div class="gridrow">
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                </div>
+                <div class="gridrow">
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                    <img class="libraryselection" src="ashimg/ash.png" onclick="setvideo('')"></img>
+                </div>
+            </div>
+            <script src="scripts.js">
+                let videoref = window.parent.getElementById('videor');
+
+                function setvideo(src) {
+                    videoref.innerHTML = '<video width="1000px" height="800px" id="videor" src="localmov / morb.mkv" controls autoplay> <source src="' + src + '" /> </video>';
+                    videoref = document.getElementById('videor');
+                    videoref.play();
+                    console.log(src);
+                };
+            </script>
+</body>
+</html>

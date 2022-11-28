@@ -1,0 +1,48 @@
+<html>
+<head>
+    <nav class="centeredhead">
+        <img src="logo.png" alt="logo" height="100px" width="145px" />
+        <ul>
+            <li>
+                <button class="navbarbutton" onclick="openpage('index.html')">Home</button>
+            </li>
+            <li>
+                <button class="navbarbutton" onclick="openpage('library.html')">library</button>
+            </li>
+            <li>
+                <button class="navbarbutton" onclick="openpage('physicalproducts.html')">Buy movies</button>
+            </li>
+            <li>
+                <button class="navbarbutton">TBD</button>
+            </li>
+            <li>
+                <button class="navbarbutton">TBD</button>
+            </li>
+        </ul>
+    </nav>
+</head>
+   <body>
+       <div>
+           <link href="styles.css" rel="stylesheet" />
+           <div>
+               <h2>search</h2>
+               <input type="text" id="mySearch" onkeyup="searchstuff()" placeholder="Search.." title="Type in a category">
+               <ul class="ulgrid" style="background-color:white;" id="myMenu">
+                   <li><h1 hidden>shrek</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" onclick="window.location.href = 'buyscreens/buyshrek.html';" /> </li>
+                   <li><h1 hidden>beemovie</h1> <img class="libraryselection" src="moviescreenshit/bee.png" onclick="window.location.href = 'buyscreens/buybeemovie.html';"/> </li>
+                   <li><h1 hidden>morbius</h1> <img class="libraryselection" src="moviescreenshit/morbius.jpg" onclick="window.location.href = 'buyscreens/buymorbius.html';"/> </li>
+                   <li><h1 hidden>minions: rise of gru</h1> <img class="libraryselection" src="moviescreenshit/minions.jpg" onclick="window.location.href = 'buyscreens/buyminions.html';"/> </li>
+                   <li><h1 hidden>hunt for the wilderpeople</h1> <img class="libraryselection" src="moviescreenshit/wild.jpg" onclick="window.location.href = 'buyscreens/buyhuntforthewilderpeople.html';"/> </li>
+                   <li><h1 hidden>star wars 3</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                   <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                   <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+                   <li><h1 hidden>other movie</h1> <img class="libraryselection" src="moviescreenshit/shrek.jpg" /> </li>
+               </ul>
+           </div>
+           <div class="centeredbody">
+           </div>
+
+           <script src="scripts.js"></script>
+
+</body>
+</html>

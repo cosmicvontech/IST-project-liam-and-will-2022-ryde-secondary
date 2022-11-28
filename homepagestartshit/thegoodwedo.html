@@ -1,0 +1,21 @@
+<html>
+<body onload="intervalchan()">
+    <link href="styles2.css" rel="stylesheet" />
+    <img class="imager" width="400px" height="550px" id="imagewheel" alt="ourstuff" />
+    <script>
+        var imageref = document.getElementById('imagewheel');
+        var saucearray = [], x = -1;
+        saucearray[0] = "goodimages/barry.png";
+        saucearray[1] = "goodimages/cryin.png";
+
+        function intervalchan() {
+               setInterval(changeimg, 690)
+        }
+
+        function changeimg() {
+            x = (x === saucearray.length - 1) ? 0 : x + 1;
+            imageref.src = saucearray[x];
+        };
+    </script>
+</body>
+</html>
